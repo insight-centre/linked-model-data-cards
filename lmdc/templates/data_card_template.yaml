@@ -1,0 +1,80 @@
+overview:
+  article_link:
+  dataset_name:
+  data_modality:
+  domain:
+  file_format:
+  file_name:
+  file_repository_link:
+  keywords:
+  languages:
+  last_update_date:
+  model_cards:
+  release_date:
+  responsible_parties:
+experience:
+  additional_use_cases:
+  intended_users:
+  intended_use_cases:
+  prerequisites:
+  prohibited_use_cases:
+  unintended_use_cases:
+  pipeline_info:
+structure:
+  columns:
+  data_splits:
+  duplicate_data:
+  instance_connections:
+  instance_count:
+  instance_patterns:
+  missing_data:
+  sensitive_content:
+creation:
+  annoator_demographics:
+  annotation_guidelines:
+  collection_date:
+  collection_method:
+  collectors:
+  data_source:
+  motivation:
+  synthetic_feature:
+transformations:
+  cleaning:
+  labelling:
+  parsing:
+  processing:
+  rating:
+  raw_data_available:
+  sampling_filtering:
+  validation:
+examples:
+  code_examples:
+  demos:
+  errors:
+  further_documentation:
+  null_feature_instance:
+  outlier_instance:
+  publication_use_repo:
+  project_use_repo:
+  typical_instance:
+considerations:
+  ethical_consideraions:
+  licenses:
+  limitations:
+  policies:
+  potential_skew_biases:
+  restrictions:
+  risks:
+  skew_biases:
+  trade_offs:
+additional_info:
+  background_info:
+  citations:
+  curators:
+  funding:
+  maintenance:
+  references:
+  retention:
+  updates:
+  versions:
+  wipeout:

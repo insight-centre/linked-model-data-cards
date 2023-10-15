@@ -1,0 +1,56 @@
+overview:
+  article_link:
+  citation:
+  contact:
+  domain:
+  keywords:
+  release_date:
+  license:
+  data_cards:
+  model_name:
+  model_type:
+  owners:
+  repository:
+  responsible_parties:
+  version:
+experience:
+  expected_performance:
+  ideal_conditions:
+  input_format:
+  intended_users:
+  intended_use_cases:
+  prohibited_use_cases:
+  unintended_use_cases:
+  unexpected_performance:
+structure:
+  fine_tuning:
+  model_architecture:
+factors:
+  data_subgroups:
+  performance_factors:
+training:
+  preprocessing:
+  pretraining:
+  quanititave_analysis:
+  training_environment:
+  train_datasets:
+evaluation:
+  evaluation_datasets:
+  evaluation_environment:
+  preprocessing:
+  quanititave_analysis:
+considerations:
+  caveats:
+  environmental_impacts:
+  ethical_considerations:
+  ethical_reviews:
+  limitations:
+  perform_discrepancies:
+  biases:
+  risks:
+  underrepresented_demographies:
+examples:
+  current_deployments:
+  demos:
+  past_used_repository:
+  tutorials:

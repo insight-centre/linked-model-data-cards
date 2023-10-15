@@ -1,0 +1,29 @@
+overview:
+  dataspace_name:
+  purpose:
+  release_date:
+  responsible_parties:
+  version:
+structure:
+  data_sources:
+dataasets:
+  data_cards:
+models:
+  model_cards:
+experience:
+  archiving:
+  collaboration:
+  disposal:
+  ingestion:
+  processing:
+  sharing:
+  storage:
+considerations:
+  dependencies:
+  environmental:impacts:
+  ethical_consideraions:
+  limitations:
+  privacy:
+examples:
+  demos:
+  tutorials:
