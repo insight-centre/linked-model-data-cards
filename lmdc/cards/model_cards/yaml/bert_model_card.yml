@@ -1,0 +1,102 @@
+overview:
+  model_name: "bert-base-uncased"
+  authors: ["Jacob Devlin", "Ming-Wei Chang", "Kenton Lee", "Kristina Toutanova"]
+  date_release: "2018-Oct-31"
+  model_type: ["NLP", "MLM", "Unsupervised", "Bidirectional", "Pretrained model on English language using a masked language modeling (MLM) objective."]
+  version:
+  owners:
+  license: ["Apache 2.0"]
+  citation: ["@article{devlin2018bert,
+      title={BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding},
+      author={Devlin, Jacob and Chang, Ming-Wei and Lee, Kenton and Toutanova, Kristina},
+      journal={arXiv preprint arXiv:1810.04805},
+      year={2018}
+    }"]
+  repository: ["https://github.com/google-research/bert"]
+  article: ["https://doi.org/10.48550/arXiv.1810.04805"]
+  model_cards: ["https://huggingface.co/bert-base-uncased"]
+  contact: ["jacobdevlin@google.com", "mingweichang@google.com", "kentonl@google.com"]
+experience:
+  intended_use_case: ["masked language modeling", "next sentence prediction", "additional training", "downstream NLP tasks", "sequence classification", "token classification", "question answering"]
+  intended_user:
+  unintended_use_case: ["text generation"]
+  prohibited_use_case:
+  expected_performance:
+  unexpected_performance:
+  input_format: ["pipeline for masked language modeling"]
+  ideal_conditions: ["no typos", "common words"]
+structure:
+  model_architecture: {"layers": 12, "hidden": 768, "heads": 12, "parameters": 110000000}
+  finetuned_algs:
+factors:
+  data_subgroups: {"gender": ["men", "women"]}
+  performance_factors:
+training:
+  pretraining: {
+    "TPUs": 4,
+    "TPU_qualities": ["cloud", "pod configuration"],
+    "TPU_chips": 16,
+    "steps": 1000000,
+    "batch_size": 256,
+    "sequence_length": "128 tokens for 90% of the steps and 512 for the remaining 10%",
+    "optimizer": "Adam",
+    "learning_rate": 0.0001,
+    "beta1": 0.9,
+    "beta2": 0.999,
+    "weight_decay": 0.01,
+    "learning_rate_warmup": "10000 steps"
+    }
+  train_datasets:
+    {"wikipedia":
+      {"motivation": "english factual texts",
+      "preprocessing": ["lowercasing", "tokenization via WordPiece", "sentences randomly selected", "tokens masked or replaced"],
+      "factor_distrib": ,
+      "training_env": ,
+      "quant_analysis": {"factor_examined": {"metric_used": "metric_score"}}},
+    "BooksCorpus":
+      {"motivation": "11038 books",
+      "preprocessing": ["lowercasing", "tokenization via WordPiece", "sentences randomly selected", "tokens masked or replaced"],
+      "factor_distrib": ,
+      "training_env": ,
+      "quant_analysis": {"factor_examined": {"metric_used": "metric_score"}}}
+      }
+evaluation:
+  eval_datasets:
+    {"Glue":
+      {"motivation": ,
+      "preprocessing": ,
+      "factor_distrib": ,
+      "evaluation_env": "BERT was fine-tuned on downstream tasks prior to evaluation",
+      "quant_analysis": {
+        "MNLI-(m/mm)": "84.6/83.4",
+        "QQP": 71.2,
+        "QNLI": 90.5,
+        "SST-2": 93.5,
+        "CoLA": 52.1,
+        "STS-B": 85.8,
+        "MRPC": 88.9,
+        "RTE": 66.4,
+        "Average": 79.6
+        }}
+      }
+considerations:
+  present_bias: ["gender"]
+  ethical_reviews:
+  underrep_dem:
+  perform_discrep: ["When prompted to fill a mask for 'The man/woman worked as a [MASK]', generates occupations that mostly align with societal biases/ misogyny/ sexism."]
+  risks:
+  limitations:
+  caveats:
+  ethical_considerations: ["The encoded gender bias will be present in fine-tuned versions of BERT as well."]
+  env_impacts:
+    hardware_type:
+    hours_used:
+    cloud_provider:
+    compute_region:
+    carbon_calc:
+examples:
+  current_deploys: "https://huggingface.co/bert-base-uncased : Spaces using bert-base-uncased"
+  tutorials: ["https://huggingface.co/bert-base-uncased#how-to-use"]
+  demos:
+  past_use_repo: "https://huggingface.co/models?other=bert"
+
