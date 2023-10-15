@@ -1,0 +1,402 @@
+overview:
+  type: dict
+  schema:
+    article_link: # an official weblink for the dataset
+      type: string
+      empty: True
+      nullable: True
+    dataset_name: # name of the dataset to be utilized for referring this data card
+      type: string
+      empty: True
+      nullable: True
+    data_modality: # modality of the dataset
+      type: integer
+      empty: True
+      nullable: True
+    domain: # domains with which the dataset relates to
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    file_format: # format in which it exists in `article_links`
+      type: string
+      empty: True
+      nullable: True
+    file_name: # name of the dataset file in `article_links`
+      type: string
+      empty: True
+      nullable: True
+    file_repository_link: # direct link to the dataset file
+      type: string
+      empty: True
+      nullable: True
+    keywords: # keywords associated with the dataset
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    languages: # languages associated with the dataset
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    last_update_date:  # date when the dataset was last updated
+      type: date
+      empty: True
+      nullable: True
+    model_cards: # models which use the dataset for training or evaluation
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    release_date: # date when the dataset was first released
+      type: date
+      empty: True
+      nullable: True
+    responsible_parties: # parties/persons/entities responsible for creation/maintenance of the dataset
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+experience:
+  type: dict
+  schema:
+    additional_use_cases: # unconventional use cases
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    intended_users: # intended users of the dataset
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    intended_use_cases: # intended use cases of the dataset
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    prerequisites:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    prohibited_use_cases: # use cases for which the dataset should not be used for
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    unintended_use_cases: # unintended users of the dataset
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    pipeline_info:
+      type: string
+      empty: True
+      nullable: True
+structure:
+  type: dict
+  schema:
+    columns: # a dictionary with column names as keys and a dictionary with description and datatype as values
+      type: dict
+      empty: True
+      nullable: True
+    data_splits:
+      type: string
+      empty: True
+      nullable: True
+    duplicate_data:
+      type: string
+      empty: True
+      nullable: True
+    instance_connections:
+      type: string
+      empty: True
+      nullable: True
+    instance_count: # overview: data_modality?
+      type: integer
+      empty: True
+      nullable: True
+    instance_patterns:
+      type: dict
+      empty: True
+      nullable: True
+    missing_data:
+      type: string
+      empty: True
+      nullable: True
+    sensitive_content:
+      type: string
+      empty: True
+      nullable: True
+creation:
+  type: dict
+  schema:
+    annotator_demographics:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    annotation_guidelines:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    collection_date: # date when data collection started
+      type: date
+      empty: True
+      nullable: True
+    collection_method: # method used to collect the data
+      type: string
+      empty: True
+      nullable: True
+    collectors: # parties responsible for collection of the data
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    data_source: # overview: article_link? overview: file_repository_link?
+      type: string
+      empty: True
+      nullable: True
+    motivation: # motivation behind generating the dataset
+      type: string
+      empty: True
+      nullable: True
+    synthetic_feature: # generated synthetic features in the dataset as keys, description as values
+      type: dict
+      empty: True
+      nullable: True
+transformations:
+  type: dict
+  schema:
+    cleaning: # cleaning methods used
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    labelling:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    parsing: # parsing methods used
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    processing:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    rating:
+      type: integer
+      empty: True
+      nullable: True
+    raw_data_available:
+      type: boolean
+      empty: True
+      nullable: True
+    sampling_filtering: # filtering methods used
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    validation: # validation methods used
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+examples:
+  type: dict
+  schema:
+    code_examples:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    demos:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    errors: # instances which are error-prone and should be removed
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    further_documentation:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    null_feature_instance: # what a null instance looks like
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    outlier_instance: # outlier types which should be removed
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    publication_use_repo:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    project_use_repo:
+      type: string
+      empty: True
+      nullable: True
+    typical_instance:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+considerations:
+  type: dict
+  schema:
+    ethical_reviews:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    licenses: # licenses
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    limitations: # any limitations associated with the dataset
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    policies:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    potential_skew_biases: # potential skew biases in the dataset
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    restrictions:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    risks: # any risks/warning to be careful about before using the dataset
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    skew_biases: # known skew biases in the dataset
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    trade_offs:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+additional_info:
+  type: dict
+  schema:
+    background_info:
+      type: string
+      empty: True
+      nullable: True
+    citations:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    curators:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    funding: # parties/entities that provide funding to extend/maintain the dataset
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    maintenance:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    references:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    retention:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    updates: # last update performed
+      type: string
+      empty: True
+      nullable: True
+    versions: # latest versions being readily maintained
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    wipeout:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
