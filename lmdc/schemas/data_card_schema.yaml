@@ -1,63 +1,63 @@
 overview:
   type: dict
   schema:
-    article_link: # an official weblink for the dataset
+    article_link:
       type: string
       empty: True
       nullable: True
-    dataset_name: # name of the dataset to be utilized for referring this data card
+    data_name:
       type: string
-      empty: True
-      nullable: True
-    data_modality: # modality of the dataset
+      empty: False
+      nullable: False
+    data_modality:
       type: integer
       empty: True
       nullable: True
-    domain: # domains with which the dataset relates to
+    domains:
       type: list
       schema:
         type: string
       empty: True
       nullable: True
-    file_format: # format in which it exists in `article_links`
+    file_format:
       type: string
       empty: True
       nullable: True
-    file_name: # name of the dataset file in `article_links`
+    file_name:
       type: string
       empty: True
       nullable: True
-    file_repository_link: # direct link to the dataset file
+    file_repository_link:
       type: string
       empty: True
       nullable: True
-    keywords: # keywords associated with the dataset
+    keywords:
       type: list
       schema:
         type: string
       empty: True
       nullable: True
-    languages: # languages associated with the dataset
+    languages:
       type: list
       schema:
         type: string
       empty: True
       nullable: True
-    last_update_date:  # date when the dataset was last updated
+    last_update_date:
       type: date
       empty: True
       nullable: True
-    model_cards: # models which use the dataset for training or evaluation
+    model_cards:
       type: list
       schema:
         type: string
       empty: True
       nullable: True
-    release_date: # date when the dataset was first released
+    release_date:
       type: date
       empty: True
       nullable: True
-    responsible_parties: # parties/persons/entities responsible for creation/maintenance of the dataset
+    responsible_parties:
       type: list
       schema:
         type: string
@@ -66,19 +66,19 @@ overview:
 experience:
   type: dict
   schema:
-    additional_use_cases: # unconventional use cases
+    additional_use_cases:
       type: list
       schema:
         type: string
       empty: True
       nullable: True
-    intended_users: # intended users of the dataset
+    intended_users:
       type: list
       schema:
         type: string
       empty: True
       nullable: True
-    intended_use_cases: # intended use cases of the dataset
+    intended_use_cases:
       type: list
       schema:
         type: string
@@ -90,13 +90,13 @@ experience:
         type: string
       empty: True
       nullable: True
-    prohibited_use_cases: # use cases for which the dataset should not be used for
+    prohibited_use_cases:
       type: list
       schema:
         type: string
       empty: True
       nullable: True
-    unintended_use_cases: # unintended users of the dataset
+    unintended_use_cases:
       type: list
       schema:
         type: string
@@ -109,7 +109,7 @@ experience:
 structure:
   type: dict
   schema:
-    columns: # a dictionary with column names as keys and a dictionary with description and datatype as values
+    columns:
       type: dict
       empty: True
       nullable: True
@@ -125,12 +125,12 @@ structure:
       type: string
       empty: True
       nullable: True
-    instance_count: # overview: data_modality?
+    instance_count:
       type: integer
       empty: True
       nullable: True
     instance_patterns:
-      type: dict
+      type: string
       empty: True
       nullable: True
     missing_data:
@@ -156,74 +156,78 @@ creation:
         type: string
       empty: True
       nullable: True
-    collection_date: # date when data collection started
+    collection_date:
       type: date
       empty: True
       nullable: True
-    collection_method: # method used to collect the data
-      type: string
+    collection_methods:
+      type: list
+        schema:
+          type: string
       empty: True
       nullable: True
-    collectors: # parties responsible for collection of the data
+    collectors:
       type: list
       schema:
         type: string
       empty: True
       nullable: True
-    data_source: # overview: article_link? overview: file_repository_link?
+    data_sources:
+      type: list
+        schema:
+          type: string
+      empty: True
+      nullable: True
+    motivation:
       type: string
       empty: True
       nullable: True
-    motivation: # motivation behind generating the dataset
-      type: string
-      empty: True
-      nullable: True
-    synthetic_feature: # generated synthetic features in the dataset as keys, description as values
+    synthetic_features:
       type: dict
       empty: True
       nullable: True
 transformations:
   type: dict
   schema:
-    cleaning: # cleaning methods used
+    cleaning_methods:
       type: list
       schema:
         type: string
       empty: True
       nullable: True
-    labelling:
+    labelling_methods:
       type: list
       schema:
         type: string
       empty: True
       nullable: True
-    parsing: # parsing methods used
+    parsing_methods:
       type: list
       schema:
         type: string
       empty: True
       nullable: True
-    processing:
+    processing_methods:
       type: list
       schema:
         type: string
       empty: True
       nullable: True
     rating:
-      type: integer
+      type: string
       empty: True
       nullable: True
-    raw_data_available:
+    is_raw_data_available:
       type: boolean
       empty: True
       nullable: True
-    sampling_filtering: # filtering methods used
+    sampling_filtering_methods:
       type: list
       schema:
         type: string
       empty: True
       nullable: True
-    validation: # validation methods used
+    validation_methods:
       type: list
       schema:
         type: string
@@ -244,7 +248,7 @@ examples:
         type: string
       empty: True
       nullable: True
-    errors: # instances which are error-prone and should be removed
+    error_prone_instances:
       type: list
       schema:
         type: string
@@ -256,29 +260,27 @@ examples:
         type: string
       empty: True
       nullable: True
-    null_feature_instance: # what a null instance looks like
+    null_feature_instances:
       type: list
       schema:
         type: string
       empty: True
       nullable: True
-    outlier_instance: # outlier types which should be removed
+    outlier_instances:
       type: list
       schema:
         type: string
       empty: True
       nullable: True
     publication_use_repo:
-      type: list
-      schema:
-        type: string
+      type: string
       empty: True
       nullable: True
     project_use_repo:
       type: string
       empty: True
       nullable: True
-    typical_instance:
+    typical_instances:
       type: list
       schema:
         type: string
@@ -293,13 +295,13 @@ considerations:
         type: string
       empty: True
       nullable: True
-    licenses: # licenses
+    licenses:
       type: list
       schema:
         type: string
       empty: True
       nullable: True
-    limitations: # any limitations associated with the dataset
+    limitations:
       type: list
       schema:
         type: string
@@ -311,25 +313,19 @@ considerations:
         type: string
       empty: True
       nullable: True
-    potential_skew_biases: # potential skew biases in the dataset
-      type: list
-      schema:
-        type: string
-      empty: True
-      nullable: True
     restrictions:
       type: list
       schema:
         type: string
       empty: True
       nullable: True
-    risks: # any risks/warning to be careful about before using the dataset
+    risks:
       type: list
       schema:
         type: string
       empty: True
       nullable: True
-    skew_biases: # known skew biases in the dataset
+    skew_biases:
       type: list
       schema:
         type: string
@@ -360,7 +356,7 @@ additional_info:
         type: string
       empty: True
       nullable: True
-    funding: # parties/entities that provide funding to extend/maintain the dataset
+    funding:
       type: list
       schema:
         type: string
@@ -378,23 +374,23 @@ additional_info:
         type: string
       empty: True
       nullable: True
-    retention:
+    retention_policies:
       type: list
       schema:
         type: string
       empty: True
       nullable: True
-    updates: # last update performed
+    updates:
+      type: list
+        schema:
+          type: string
+      empty: True
+      nullable: True
+    version:
       type: string
       empty: True
       nullable: True
-    versions: # latest versions being readily maintained
-      type: list
-      schema:
-        type: string
-      empty: True
-      nullable: True
-    wipeout:
+    wipeout_policies:
       type: list
       schema:
         type: string
