@@ -1,6 +1,6 @@
 overview:
   article_link:  # an official weblink for the dataset
-  data_name:  # name of the dataset to be utilized for referring this data card
+  name:  # name of the dataset to be utilized for referring this data card
   data_modality:  # modality of the dataset
   domains:  # domains with which the dataset relates to
   file_format:  # format in which it exists in `file_repository_link`
@@ -9,16 +9,17 @@ overview:
   keywords:  # keywords associated with the dataset
   languages:  # languages associated with the dataset
   last_update_date:  # date when the dataset was last updated
-  model_cards:  # models which use the dataset for training or evaluation; can refer to `model_name`
+  model_cards:  # models which use the dataset for training or evaluation; can refer to `name` of a model_card
   release_date:  # date when the dataset was first released
   responsible_parties:  # parties/persons/entities responsible for creation or maintenance of the dataset
+  version:  # latest version being readily maintained
 experience:
   additional_use_cases:  # unconventional use cases
   intended_users:  # intended users of the dataset
   intended_use_cases:  # intended use cases
   prerequisites:  # technical knowledge or domain understanding required
   prohibited_use_cases:  # use cases for which the dataset should not be used for
-  unintended_use_cases:  # unintended users of the dataset
+  unintended_use_cases:  # unintended use cases of the dataset
   pipeline_info:  # any known information of pipeline or downstream use
 structure:
   columns:  # a dict with column names as keys, and a dict with description and datatype as values
@@ -76,5 +77,4 @@ additional_info:
   references:  # references to help understand or use the dataset
   retention_policies:  # retention policies
   updates:  # recent updates performed
-  version:  # latest version being readily maintained
   wipeout_policies:  # wipe-out policies

@@ -5,7 +5,7 @@ overview:
       type: string
       empty: True
       nullable: True
-    data_name:
+    name:
       type: string
       empty: False
       nullable: False
@@ -61,6 +61,10 @@ overview:
       type: list
       schema:
         type: string
+      empty: True
+      nullable: True
+    version:
+      type: string
       empty: True
       nullable: True
 experience:
@@ -384,10 +388,6 @@ additional_info:
       type: list
         schema:
           type: string
-      empty: True
-      nullable: True
-    version:
-      type: string
       empty: True
       nullable: True
     wipeout_policies:
