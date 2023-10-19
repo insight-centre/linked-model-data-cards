@@ -277,11 +277,15 @@ examples:
       empty: True
       nullable: True
     publication_use_repo:
-      type: string
+      type: list
+        schema:
+          type: string
       empty: True
       nullable: True
     project_use_repo:
-      type: string
+      type: list
+        schema:
+          type: string
       empty: True
       nullable: True
     typical_instances:
