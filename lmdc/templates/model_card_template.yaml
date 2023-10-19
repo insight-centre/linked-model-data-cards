@@ -1,56 +1,48 @@
 overview:
-  article_link:
-  citation:
-  contact:
-  domain:
-  keywords:
-  release_date:
-  license:
-  data_cards:
-  model_name:
-  model_type:
-  owners:
-  repository:
-  responsible_parties:
-  version:
+  article_link:  # an official weblink for the model
+  data_cards:  # datasets which the model is built on; can refer to `name` of a data_card
+  domains:  # domains with which the model relates to
+  keywords:  # keywords associated with the model
+  model_type:  # type of model
+  name:  # name of the model to be utilized for referring this model card
+  release_date:  # date when the model was first released
+  responsible_parties:  # parties/persons/entities responsible for creation or maintenance of the model
+  version:  # latest version being readily maintained
 experience:
-  expected_performance:
-  ideal_conditions:
-  input_format:
-  intended_users:
-  intended_use_cases:
-  prohibited_use_cases:
-  unintended_use_cases:
-  unexpected_performance:
+  expected_performance:  # expected performance of the model
+  ideal_conditions:  # ideal conditions in which the model can be utilized
+  input_format:  # input format required by the model
+  intended_users:   # intended users of the model
+  intended_use_cases:  # intended use cases
+  prohibited_use_cases:  # use cases for which the model should not be used for
+  unintended_use_cases:  # unintended use cases of the dataset
 structure:
-  fine_tuning:
-  model_architecture:
+  fine_tuning:  # fine-tuning details
+  model_architecture:  # technical specifications of model architecture and algorithms
 factors:
-  data_subgroups:
-  performance_factors:
+  data_subgroups:  # data subgroups considered in model training, evaluation, and deployment
+  performance_factors:  #  essential factors affecting model success and performance
 training:
-  preprocessing:
-  pretraining:
-  quanititave_analysis:
-  training_environment:
-  train_datasets:
+  preprocessing:  # pre-processing methods
+  pretraining:  # details about pre-training of the model
+  quanititave_analysis:  # details about metrics for which the model is optimized
+  training_environment:  # details related to the training environment
+  train_datasets:  # datasets used in the training
 evaluation:
-  evaluation_datasets:
-  evaluation_environment:
-  preprocessing:
-  quanititave_analysis:
-considerations:
-  caveats:
-  environmental_impacts:
-  ethical_considerations:
-  ethical_reviews:
-  limitations:
-  perform_discrepancies:
-  biases:
-  risks:
-  underrepresented_demographies:
+  evaluation_datasets:  # datasets used in the evaluation process
+  evaluation_environment:  # details about evaluation environment
+  preprocessing:  # pre-processing methods used before evaluation
+  quanititave_analysis:  # results of the quantitative analysis of performance like factors examined and metrics used
 examples:
-  current_deployments:
-  demos:
-  past_used_repository:
-  tutorials:
+  current_deployments:  # current deployments of the model
+  demos:  # links to demonstrations
+  project_use_repo:  # repository links related to usage of the model
+  tutorials:  # links to tutorials
+considerations:
+  caveats:  # caveats related to usage of the model
+  environmental_impacts:  # environmental impacts of the model like resultant calculation of estimated carbon emissions
+  ethical_reviews:  # ethical considerations
+  limitations:  # limitations related to usage of the model
+  biases:  # known or potential biases in the dataset
+  risks:  # risks related to usage of the model
+  underrepresented_demographies:  # underrepresented groups in the datasets which can cause discrepancies in performance
