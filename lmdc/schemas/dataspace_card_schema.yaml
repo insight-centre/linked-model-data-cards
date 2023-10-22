@@ -29,105 +29,6 @@ overview:
       type: string
       empty: True
       nullable: True
-structure:
-  type: dict
-  schema:
-    data_access_methos:
-      type: list
-        schema:
-          type: string
-      empty: True
-      nullable: True
-    data_formats:
-      type: list
-      schema:
-        type: string
-      empty: True
-      nullable: True
-    data_infrastructure:
-      type: list
-        schema:
-          type: string
-      empty: True
-      nullable: True
-    data_sources:
-      type: list
-      schema:
-        type: string
-      empty: True
-      nullable: True
-    meta_data_management:
-      type: list
-      schema:
-        type: string
-      empty: True
-      nullable: True
-datasets:
-  type: dict
-  schema:
-    data_Cards:
-      type: list
-      schema:
-        type: string
-      empty: True
-      nullable: True
-    data_quality_metrics:
-      type: list
-      schema:
-        type: string
-      empty: True
-      nullable: True
-models:
-  type: dict
-  schema:
-    model_cards:
-      type: list
-      schema:
-        type: string
-      empty: True
-      nullable: True
-    model_performance_metrics:
-      type: list
-      schema:
-        type: string
-      empty: True
-      nullable: True
-experience:
-  type: dict
-  schema:
-    collaboration:
-      type: list
-      schema:
-        type: string
-      empty: True
-      nullable: True
-    lifecycle_stages:
-      type: list
-      schema:
-        type: string
-      empty: True
-      nullable: True
-    visualization:
-      type: list
-      schema:
-        type: string
-      empty: True
-      nullable: True
-examples:
-  type: dict
-  schema:
-    demos:
-      type: list
-      schema:
-        type: string
-      empty: True
-      nullable: True
-    tutorials:
-      type: list
-      schema:
-        type: string
-      empty: True
-      nullable: True
 considerations:
   type: dict
   schema:
@@ -156,6 +57,105 @@ considerations:
       empty: True
       nullable: True
     privacy:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+datasets:
+  type: dict
+  schema:
+    data_Cards:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    data_quality_metrics:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+examples:
+  type: dict
+  schema:
+    demos:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    tutorials:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+experience:
+  type: dict
+  schema:
+    collaboration:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    lifecycle_stages:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    visualization:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+models:
+  type: dict
+  schema:
+    model_cards:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    model_performance_metrics:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+structure:
+  type: dict
+  schema:
+    data_access_methos:
+      type: list
+        schema:
+          type: string
+      empty: True
+      nullable: True
+    data_formats:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    data_infrastructure:
+      type: list
+        schema:
+          type: string
+      empty: True
+      nullable: True
+    data_sources:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    meta_data_management:
       type: list
       schema:
         type: string

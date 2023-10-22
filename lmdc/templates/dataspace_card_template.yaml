@@ -5,28 +5,28 @@ overview:
   purpose:  # purpose of the dataspace
   release_date:  # date of release
   version:  # latest version being readily maintained
-structure:
-  data_access_methos:  # methods to access the data like queries, user interfaces, APIs, etc.
-  data_formats:  # different formats of datasets and models that are a part of the dataspace
-  data_infrastructure:  # systems/processes used to for data gathering, data transformation, and storage
-  data_sources:  # sources/origins of the data like systems, applications, files, databases, feeds, sensors, etc.
-  meta_data_management:  # structure adopted for organizing, documenting, and managing metadata
-dataasets:
-  data_cards:  # data cards that are a part of the dataspace
-  data_quality_metrics:  # quality metrics related to completeness, data labelling quality, consistency and timeliness
-models:
-  model_cards:  # model cards that are a part of the dataspace
-  model_performance_metrics:  # performance metrics that depict the quality of models that are a part of the dataspace
-experience:
-  collaboration:  # mechanisms for collaboration and sharing of data like exchange protocols, access controls, etc.
-  lifecycle_stages:  # additional details related to ingestion, storage, processing, archiving, and disposal of data
-  visualization:  # tools and capabilities available within the dataspace for data exploration and interpretation
-examples:
-  demos:  # weblinks to existing demonstrations
-  tutorials:  # weblinks to existing tutorials
 considerations:
   dependencies:  # dependencies or external resources required by the models that are a part of the dataspace
   environmental_impacts:  # details related to energy consumption, carbon footprint, cooling, etc.
   ethical_reviews:  # details related to consent, bias, fairness, transparency, accountability, and anonymization
   limitations:  # storage bandwidth, computation power, cost, public perception, concerns about data misuse, etc.
   privacy:  # authorization mechanism, data subject rights, data breach notifications, compliance with GDPR, etc.
+dataasets:
+  data_cards:  # data cards that are a part of the dataspace
+  data_quality_metrics:  # quality metrics related to completeness, data labelling quality, consistency and timeliness
+examples:
+  demos:  # weblinks to existing demonstrations
+  tutorials:  # weblinks to existing tutorials
+experience:
+  collaboration:  # mechanisms for collaboration and sharing of data like exchange protocols, access controls, etc.
+  lifecycle_stages:  # additional details related to ingestion, storage, processing, archiving, and disposal of data
+  visualization:  # tools and capabilities available within the dataspace for data exploration and interpretation
+models:
+  model_cards:  # model cards that are a part of the dataspace
+  model_performance_metrics:  # performance metrics that depict the quality of models that are a part of the dataspace
+structure:
+  data_access_methos:  # methods to access the data like queries, user interfaces, APIs, etc.
+  data_formats:  # different formats of datasets and models that are a part of the dataspace
+  data_infrastructure:  # systems/processes used to for data gathering, data transformation, and storage
+  data_sources:  # sources/origins of the data like systems, applications, files, databases, feeds, sensors, etc.
+  meta_data_management:  # structure adopted for organizing, documenting, and managing metadata
