@@ -67,82 +67,118 @@ overview:
       type: string
       empty: True
       nullable: True
-experience:
+additional_info:
   type: dict
   schema:
-    additional_use_cases:
+    background_info:
+      type: list
+        schema:
+          type: string
+      empty: True
+      nullable: True
+    citations:
       type: list
       schema:
         type: string
       empty: True
       nullable: True
-    intended_users:
+    curators:
       type: list
       schema:
         type: string
       empty: True
       nullable: True
-    intended_use_cases:
+    funding:
       type: list
       schema:
         type: string
       empty: True
       nullable: True
-    prerequisites:
+    maintenance:
       type: list
       schema:
         type: string
       empty: True
       nullable: True
-    prohibited_use_cases:
+    references:
       type: list
       schema:
         type: string
       empty: True
       nullable: True
-    unintended_use_cases:
+    retention_policies:
       type: list
       schema:
         type: string
       empty: True
       nullable: True
-    pipeline_info:
-      type: string
+    updates:
+      type: list
+        schema:
+          type: string
       empty: True
       nullable: True
-structure:
+    wipeout_policies:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+considerations:
   type: dict
   schema:
-    columns:
-      type: dict
+    biases:
+      type: list
+      schema:
+        type: string
       empty: True
       nullable: True
-    data_splits:
-      type: string
+    ethical_reviews:
+      type: list
+      schema:
+        type: string
       empty: True
       nullable: True
-    duplicate_data:
-      type: string
+    licenses:
+      type: list
+      schema:
+        type: string
       empty: True
       nullable: True
-    instance_connections:
-      type: string
+    limitations:
+      type: list
+      schema:
+        type: string
       empty: True
       nullable: True
-    instance_count:
-      type: integer
+    policies:
+      type: list
+      schema:
+        type: string
       empty: True
       nullable: True
-    instance_patterns:
-      type: string
+    restrictions:
+      type: list
+      schema:
+        type: string
       empty: True
       nullable: True
-    missing_data:
-      type: string
+    risks:
+      type: list
+      schema:
+        type: string
       empty: True
       nullable: True
-    sensitive_content:
-      type: string
+    skewness:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    trade_offs:
+      type: list
+      schema:
+        type: string
       empty: True
       nullable: True
 creation:
@@ -190,53 +226,6 @@ creation:
       type: dict
       empty: True
       nullable: True
-transformations:
-  type: dict
-  schema:
-    cleaning_methods:
-      type: list
-      schema:
-        type: string
-      empty: True
-      nullable: True
-    labelling_methods:
-      type: list
-      schema:
-        type: string
-      empty: True
-      nullable: True
-    parsing_methods:
-      type: list
-      schema:
-        type: string
-      empty: True
-      nullable: True
-    processing_methods:
-      type: list
-      schema:
-        type: string
-      empty: True
-      nullable: True
-    rating:
-      type: string
-      empty: True
-      nullable: True
-    is_raw_data_available:
-      type: boolean
-      empty: True
-      nullable: True
-    sampling_filtering_methods:
-      type: list
-      schema:
-        type: string
-      empty: True
-      nullable: True
-    validation_methods:
-      type: list
-      schema:
-        type: string
-      empty: True
-      nullable: True
 examples:
   type: dict
   schema:
@@ -276,13 +265,13 @@ examples:
         type: string
       empty: True
       nullable: True
-    publication_use_repo:
+    publication_repo:
       type: list
         schema:
           type: string
       empty: True
       nullable: True
-    project_use_repo:
+    project_repo:
       type: list
         schema:
           type: string
@@ -294,107 +283,142 @@ examples:
         type: string
       empty: True
       nullable: True
-considerations:
+experience:
   type: dict
   schema:
-    ethical_reviews:
+    additional_use_cases:
       type: list
       schema:
         type: string
       empty: True
       nullable: True
-    licenses:
+    intended_users:
       type: list
       schema:
         type: string
       empty: True
       nullable: True
-    limitations:
+    intended_use_cases:
       type: list
       schema:
         type: string
       empty: True
       nullable: True
-    policies:
+    prerequisites:
       type: list
       schema:
         type: string
       empty: True
       nullable: True
-    restrictions:
+    prohibited_use_cases:
       type: list
       schema:
         type: string
       empty: True
       nullable: True
-    risks:
+    unintended_use_cases:
       type: list
       schema:
         type: string
       empty: True
       nullable: True
-    skew_biases:
-      type: list
-      schema:
-        type: string
-      empty: True
-      nullable: True
-    trade_offs:
-      type: list
-      schema:
-        type: string
-      empty: True
-      nullable: True
-additional_info:
-  type: dict
-  schema:
-    background_info:
-      type: string
-      empty: True
-      nullable: True
-    citations:
-      type: list
-      schema:
-        type: string
-      empty: True
-      nullable: True
-    curators:
-      type: list
-      schema:
-        type: string
-      empty: True
-      nullable: True
-    funding:
-      type: list
-      schema:
-        type: string
-      empty: True
-      nullable: True
-    maintenance:
-      type: list
-      schema:
-        type: string
-      empty: True
-      nullable: True
-    references:
-      type: list
-      schema:
-        type: string
-      empty: True
-      nullable: True
-    retention_policies:
-      type: list
-      schema:
-        type: string
-      empty: True
-      nullable: True
-    updates:
+    pipeline_info:
       type: list
         schema:
           type: string
       empty: True
       nullable: True
-    wipeout_policies:
+structure:
+  type: dict
+  schema:
+    columns:
+      type: list
+        schema:
+          type: string
+      empty: True
+      nullable: True
+    data_splits:
+      type: list
+        schema:
+          type: string
+      empty: True
+      nullable: True
+    duplicate_data:
+      type: list
+        schema:
+          type: string
+      empty: True
+      nullable: True
+    instance_connections:
+      type: list
+        schema:
+          type: string
+      empty: True
+      nullable: True
+    instance_count:
+      type: integer
+      empty: True
+      nullable: True
+    instance_patterns:
+      type: list
+        schema:
+          type: string
+      empty: True
+      nullable: True
+    missing_data:
+      type: list
+        schema:
+          type: string
+      empty: True
+      nullable: True
+    sensitive_content:
+      type: list
+        schema:
+          type: string
+      empty: True
+      nullable: True
+transformations:
+  type: dict
+  schema:
+    cleaning_methods:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    is_raw_data_available:
+      type: boolean
+      empty: True
+      nullable: True
+    labelling_methods:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    parsing_methods:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    processing_methods:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    rating:
+      type: string
+      empty: True
+      nullable: True
+    sampling_methods:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    validation_methods:
       type: list
       schema:
         type: string
