@@ -36,7 +36,7 @@ overview:
       empty: False
       nullable: False
     release_date:
-      type: string
+      type: date
       empty: True
       nullable: True
     responsible_parties:
