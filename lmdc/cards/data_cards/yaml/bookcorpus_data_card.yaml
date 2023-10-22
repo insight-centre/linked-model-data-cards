@@ -1,21 +1,69 @@
 overview:
-  article_link: "https://doi.org/10.48550/arXiv.1506.06724"
-  dataset_name: "BookCorpus"
-  data_modality:
-  domain: ["NLP", "MLM"]
+  article_link: "https://arxiv.org/abs/1506.06724"
+  name: "BookCorpus"
+  data_modality:  74004228
+  domains: ["natural language processing", "natural language understanding"]
   file_format: ".txt"
   file_name:
   file_repository_link: "https://yknzhu.wixsite.com/mbweb"
-  keywords: ["NLP", "text", "books"]
-  languages: ["en"]
+  keywords: ["nlp", "nlu", "text", "books", "movies", "smashwords"]
+  languages: ["english"]
   last_update_date:
-  model_cards:
-  release_date:
-  responsible_parties: ["Yukun Zhu", "Ryan Kiros", "Richard Zemel", "Ruslan Salakhutdinov", "Raquel Urtasun", "Antonio Torralba", "Sanja Fidler"]
+  model_cards: ["bert", "roberta", "albert"]
+  release_date: 22/06/2015
+  responsible_parties:
+  version:
+additional_info:
+  background_info:
+  citations: [
+      "@InProceedings{Zhu_2015_ICCV,
+                                title = {Aligning Books and Movies: Towards Story-Like Visual Explanations by Watching Movies and Reading Books},
+                                author = {Zhu, Yukun and Kiros, Ryan and Zemel, Rich and Salakhutdinov, Ruslan and Urtasun, Raquel and Torralba, Antonio and Fidler, Sanja},
+                                booktitle = {The IEEE International Conference on Computer Vision (ICCV)},
+                                month = {December},
+                                year = {2015}
+                              }",
+  ]
+  curators: ["Yukun Zhu", "Ryan Kiros", "Richard Zemel", "Ruslan Salakhutdinov", "Raquel Urtasun", "Antonio Torralba", "Sanja Fidler"]
+  funding: ["Google", "Samsung", "NSERC", "CIFAR", "ONR"]
+  maintenance:
+  references: ["https://huggingface.co/datasets/bookcorpus", "https://paperswithcode.com/dataset/bookcorpus"]
+  retention_policies:
+  updates:
+  wipeout_policies:
+considerations:
+  biases: ["overrepresented genres", "noise introduced by presence of preamble, postscript, and copyright notes in some books"]
+  ethical_reviews:
+  licenses:
+  limitations:
+  policies:
+  restrictions:
+  risks: ["copyright violations in content", "duplicated books", "potentially problematic content", "lopsided author contribution"]
+  skewness:
+  trade_offs:
+creation:
+  annoator_demographics:
+  annotation_guidelines:
+  collection_date:
+  collection_methods:
+  collectors:
+  data_sources: ["https://www.smashwords.com/"]
+  motivation:
+  synthetic_features:
+examples:
+  code_examples:
+  demos:
+  error_prone_instances:
+  further_documentation:
+  null_feature_instances:
+  outlier_instances:
+  publication_repo:
+  project_repo: ["https://huggingface.co/datasets/bookcorpus"]
+  typical_instances:
 experience:
   additional_use_cases:
   intended_users:
-  intended_use_cases: ["sentence embedding", "train neural networks to generate descriptive explanations for visual content"]
+  intended_use_cases: ["sentence embedding", "language modeling", "text generation"]
   prerequisites:
   prohibited_use_cases:
   unintended_use_cases:
@@ -23,66 +71,18 @@ experience:
 structure:
   columns:
   data_splits:
-  duplicate_data: "out of 11038 books, only 7185 are unique; crosslisted across directories with 5 potential exceptions"
+  duplicate_data: ["out of 11038 books, 7185 are unique"]
   instance_connections:
   instance_count:
   instance_patterns:
-  missing_data: "98 empty files, 655 truncated files (less than 20000 words) including 291 shorter than 10000 words"
+  missing_data:
   sensitive_content:
-creation:
-  annoator_demographics:
-  annotation_guidelines:
-  collection_date:
-  collection_method:
-  collectors:
-  data_source: "https://www.smashwords.com/"
-  motivation:
-  synthetic_feature:
 transformations:
-  cleaning:
-  labelling:
-  parsing:
-  processing:
+  cleaning_methods:
+  is_raw_data_available: True
+  labelling_methods:
+  parsing_methods:
+  processing_methods:
   rating:
-  raw_data_available:
-  sampling_filtering:
-  validation:
-examples:
-  code_examples:
-  demos:
-  errors:
-  further_documentation:
-  null_feature_instance:
-  outlier_instance:
-  publication_use_repo:
-  project_use_repo: "https://huggingface.co/models?dataset=dataset:bookcorpus"
-  typical_instance:
-considerations:
-  ethical_reviews:
-  licenses:
-  limitations:
-  policies:
-  potential_skew_biases:
-  restrictions:
-  risks: ["copyright violations in content", "duplicated books", "genre skew", "potentially problematic content", "lopsided author contribution"]
-  skew_biases: [ "genre skew, romance overrepresented", "noise introduced by presence of preamble, postscript, and copyright notes in some books" ]
-  trade_offs:
-additional_info:
-  background_info:
-  citations: [
-      "@InProceedings{Zhu_2015_ICCV,
-                   title = {Aligning Books and Movies: Towards Story-Like Visual Explanations by Watching Movies and Reading Books},
-                   author = {Zhu, Yukun and Kiros, Ryan and Zemel, Rich and Salakhutdinov, Ruslan and Urtasun, Raquel and Torralba, Antonio and Fidler, Sanja},
-                   booktitle = {The IEEE International Conference on Computer Vision (ICCV)},
-                   month = {December},
-                   year = {2015}
-                 }",
-  ]
-  curators:
-  funding: ["Google", "Samsung", "NSERC", "CIFAR", "ONR"]
-  maintenance:
-  references:
-  retention:
-  updates:
-  versions:
-  wipeout:
+  sampling_methods:
+  validation_methods:
