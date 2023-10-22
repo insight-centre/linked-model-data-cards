@@ -1,13 +1,32 @@
 overview:
   article_link:  # an official weblink for the model
-  data_cards:  # datasets which the model is built on; can refer to `name` of a data_card
+  data_cards:  # datasets which the model is built on; should refer to `name` of a data_card
   domains:  # domains with which the model relates to
   keywords:  # keywords associated with the model
+  last_update_date:  # date when the model was last updated
   model_type:  # type of model
-  name:  # name of the model to be utilized for referring this model card
+  name:  # name of the model to be utilized for referring this model card; cannot be left empty
   release_date:  # date when the model was first released
   responsible_parties:  # parties/persons/entities responsible for creation or maintenance of the model
   version:  # latest version being readily maintained
+considerations:
+  caveats:  # caveats related to usage of the model
+  environmental_impacts:  # environmental impacts of the model like resultant calculation of estimated carbon emissions
+  ethical_reviews:  # ethical considerations
+  limitations:  # limitations related to usage of the model
+  biases:  # known or potential biases in the model
+  risks:  # risks related to usage of the model
+  underrepresented_demographies:  # underrepresented groups in `train_datasets` that can cause discrepancies
+evaluation:
+  evaluation_datasets:  # datasets used in the evaluation process
+  evaluation_environment:  # details about evaluation environment
+  preprocessing:  # pre-processing methods used before evaluation on `evaluation_datasets`
+  quanititave_analysis:  # results of the quantitative analysis of performance such as factors examined and metrics used
+examples:
+  current_deployments:  # current deployments of the model
+  demos:  # links to demonstrations
+  project_repo:  # repository links related to usage of the model
+  tutorials:  # links to tutorials
 experience:
   expected_performance:  # expected performance of the model
   ideal_conditions:  # ideal conditions in which the model can be utilized
@@ -15,34 +34,16 @@ experience:
   intended_users:   # intended users of the model
   intended_use_cases:  # intended use cases
   prohibited_use_cases:  # use cases for which the model should not be used for
-  unintended_use_cases:  # unintended use cases of the dataset
+  unintended_use_cases:  # unintended use cases of the model
+factors:
+  data_subgroups:  # data subgroups considered in model training, evaluation, and deployment
+  performance_factors:  # essential factors that impact model success and performance
 structure:
   fine_tuning:  # fine-tuning details
   model_architecture:  # technical specifications of model architecture and algorithms
-factors:
-  data_subgroups:  # data subgroups considered in model training, evaluation, and deployment
-  performance_factors:  #  essential factors affecting model success and performance
 training:
-  preprocessing:  # pre-processing methods
+  preprocessing:  # pre-processing methods used before training
   pretraining:  # details about pre-training of the model
   quanititave_analysis:  # details about metrics for which the model is optimized
   training_environment:  # details related to the training environment
   train_datasets:  # datasets used in the training
-evaluation:
-  evaluation_datasets:  # datasets used in the evaluation process
-  evaluation_environment:  # details about evaluation environment
-  preprocessing:  # pre-processing methods used before evaluation
-  quanititave_analysis:  # results of the quantitative analysis of performance like factors examined and metrics used
-examples:
-  current_deployments:  # current deployments of the model
-  demos:  # links to demonstrations
-  project_use_repo:  # repository links related to usage of the model
-  tutorials:  # links to tutorials
-considerations:
-  caveats:  # caveats related to usage of the model
-  environmental_impacts:  # environmental impacts of the model like resultant calculation of estimated carbon emissions
-  ethical_reviews:  # ethical considerations
-  limitations:  # limitations related to usage of the model
-  biases:  # known or potential biases in the dataset
-  risks:  # risks related to usage of the model
-  underrepresented_demographies:  # underrepresented groups in the datasets which can cause discrepancies in performance
