@@ -1,0 +1,163 @@
+overview:
+  type: dict
+  schema:
+    contact_information:
+      type: list
+        schema:
+          type: string
+      empty: True
+      nullable: True
+    last_update_date:
+      type: date
+      empty: True
+      nullable: True
+    name:
+      type: string
+      empty: False
+      nullable: False
+    purpose:
+      type: list
+        schema:
+          type: string
+      empty: True
+      nullable: True
+    release_date:
+      type: date
+      empty: True
+      nullable: True
+    version:
+      type: string
+      empty: True
+      nullable: True
+structure:
+  type: dict
+  schema:
+    data_access_methos:
+      type: list
+        schema:
+          type: string
+      empty: True
+      nullable: True
+    data_formats:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    data_infrastructure:
+      type: list
+        schema:
+          type: string
+      empty: True
+      nullable: True
+    data_sources:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    meta_data_management:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+datasets:
+  type: dict
+  schema:
+    data_Cards:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    data_quality_metrics:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+models:
+  type: dict
+  schema:
+    model_cards:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    model_performance_metrics:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+experience:
+  type: dict
+  schema:
+    collaboration:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    lifecycle_stages:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    visualization:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+examples:
+  type: dict
+  schema:
+    demos:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    tutorials:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+considerations:
+  type: dict
+  schema:
+    dependencies:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    environmental_impacts:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    ethical_reviews:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    limitations:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    privacy:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
