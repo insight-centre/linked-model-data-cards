@@ -1,37 +1,193 @@
 overview:
-  applications:  # affiliated applications
-  contact_information:  # contact information of parties/persons/entities involved, if available
-  last_update_date:  # date when the service was last updated
-  name:  # name of the service
-  purpose:  # purpose of the service
-  references:  # relevant references
-  release_date:  # date of release
-  target_industries:  # industries related to the service
-  version:  # latest version being readily maintained
+  type: dict
+  schema:
+    applications:
+      type: list
+        schema:
+          type: string
+      empty: True
+      nullable: True
+    contact_information:
+      type: list
+        schema:
+          type: string
+      empty: True
+      nullable: True
+    last_update_date:
+      type: date
+      empty: True
+      nullable: True
+    name:
+      type: string
+      empty: False
+      nullable: False
+    purpose:
+      type: list
+        schema:
+          type: string
+      empty: True
+      nullable: True
+    references:
+      type: list
+        schema:
+          type: string
+      empty: True
+      nullable: True
+    release_date:
+      type: date
+      empty: True
+      nullable: True
+    target_industires:
+      type: list
+        schema:
+          type: string
+      empty: True
+      nullable: True
+    version:
+      type: string
+      empty: True
+      nullable: True
 considerations:
-  biases:  # details related to potential biases and their location in the service
-  bias_mitigation:  # details related to mitigation/remediation methods for biases present
-  explainibility:  # details related to explainability of algorithms and outputs
-  ethical_reviews:  # ethical considerations
-  trade_offs:  # any performance trade-offs that can be encountered after bias mitigation
+  type: dict
+  schema:
+    biases:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    bias_mitigation:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    explainability:
+      type: list
+        schema:
+          type: string
+      empty: True
+      nullable: True
+    ethical_reviews:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    trade_offs:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
 evaluation:
-  performance_metrics:  # metrics that can be utilized to evaluate performance of the service
-  test_results:  # test results from a service provider or any third-party performing an evaluation
+  type: dict
+  schema:
+    performance_metrics:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    test_results:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
 examples:
-  demos:  # links to existing demonstrations
-  deployments:  # current deployments or applications that utilize the service
-  tutorials:  # links to existing tutorials
+  type: dict
+  schema:
+    demos:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    deployments:
+      type: list
+        schema:
+          type: string
+      empty: True
+      nullable: True
+    tutorials:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
 experience:
-  expected_performance:  # details about expected performance
-  inputs:  # inputs and related requirements
-  intended_users:   # intended users of the service
-  intended_use_cases:  # intended use cases
-  outputs:  # outputs and their nature
+  type: dict
+  schema:
+    expected_performance:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    inputs:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    intended_users:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    intended_use_cases:
+      type: list
+        schema:
+          type: string
+      empty: True
+      nullable: True
+    outputs:
+      type: list
+        schema:
+          type: string
+      empty: True
+      nullable: True
 security:
-  data_security:  # details about how the data is stored and secured
-  vulnerabilities:  # vulnerabilities of the service from misuse or due to outside attacks
-  security_protocols:  # protocols in place during security breaches
+  type: dict
+  schema:
+    data_security:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    vulnerabilities:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    security_protocols:
+      type: list
+        schema:
+          type: string
+      empty: True
+      nullable: True
 structure:
-  datasets:  # datasets which the service utilizes
-  models:  # models which the service utilizes
-  technical_specifications:  # additional technical specifications related to service development or operation
+  type: dict
+  schema:
+    datasets:
+      type: list
+        schema:
+          type: string
+      empty: True
+      nullable: True
+    models:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    technical_specifications:
+      type: list
+        schema:
+          type: string
+      empty: True
+      nullable: True
