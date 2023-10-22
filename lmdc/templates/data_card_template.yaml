@@ -41,7 +41,7 @@ creation:
   collectors: # parties responsible for collection of the dataset
   data_sources:  # sources used for creating the dataset
   motivation:  # motivation behind creating the dataset
-  synthetic_features:  # a dict with feature names as keys, and a dict with description and datatype as values
+  synthetic_features:  # synthetic feature names
 examples:
   code_examples:  # code examples
   demos:  # links to demonstrations

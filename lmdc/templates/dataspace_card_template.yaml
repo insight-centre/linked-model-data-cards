@@ -15,8 +15,8 @@ dataasets:
   data_cards:  # data cards that are a part of the dataspace
   data_quality_metrics:  # quality metrics related to completeness, data labelling quality, consistency and timeliness
 examples:
-  demos:  # weblinks to existing demonstrations
-  tutorials:  # weblinks to existing tutorials
+  demos:  # links to existing demonstrations
+  tutorials:  # links to existing tutorials
 experience:
   collaboration:  # mechanisms for collaboration and sharing of data like exchange protocols, access controls, etc.
   lifecycle_stages:  # additional details related to ingestion, storage, processing, archiving, and disposal of data

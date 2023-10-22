@@ -10,11 +10,11 @@ overview:
   responsible_parties:  # parties/persons/entities responsible for creation or maintenance of the model
   version:  # latest version being readily maintained
 considerations:
+  biases:  # known or potential biases in the model
   caveats:  # caveats related to usage of the model
   environmental_impacts:  # environmental impacts of the model like resultant calculation of estimated carbon emissions
   ethical_reviews:  # ethical considerations
   limitations:  # limitations related to usage of the model
-  biases:  # known or potential biases in the model
   risks:  # risks related to usage of the model
   underrepresented_demographies:  # underrepresented groups in `train_datasets` that can cause discrepancies
 evaluation:

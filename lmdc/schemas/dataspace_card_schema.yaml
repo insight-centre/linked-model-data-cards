@@ -65,7 +65,7 @@ considerations:
 datasets:
   type: dict
   schema:
-    data_Cards:
+    data_cards:
       type: list
       schema:
         type: string

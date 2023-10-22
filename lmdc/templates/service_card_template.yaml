@@ -1,23 +1,13 @@
 overview:
   type: dict
   schema:
-    article_link:
-      type: string
-      empty: True
-      nullable: True
-    data_cards:
+    applications:
       type: list
         schema:
           type: string
       empty: True
       nullable: True
-    domains:
-      type: list
-        schema:
-          type: string
-      empty: True
-      nullable: True
-    keywords:
+    contact_information:
       type: list
         schema:
           type: string
@@ -27,22 +17,30 @@ overview:
       type: date
       empty: True
       nullable: True
-    model_type:
-      type: string
-      empty: True
-      nullable: True
     name:
       type: string
       empty: False
       nullable: False
+    purpose:
+      type: list
+        schema:
+          type: string
+      empty: True
+      nullable: True
+    references:
+      type: list
+        schema:
+          type: string
+      empty: True
+      nullable: True
     release_date:
       type: date
       empty: True
       nullable: True
-    responsible_parties:
+    target_industires:
       type: list
-      schema:
-        type: string
+        schema:
+          type: string
       empty: True
       nullable: True
     version:
@@ -56,18 +54,18 @@ considerations:
       type: list
       schema:
         type: string
-    empty: True
-    nullable: True
-    caveats:
+      empty: True
+      nullable: True
+    bias_mitigation:
       type: list
       schema:
         type: string
       empty: True
       nullable: True
-    environmental_impacts:
+    explainability:
       type: list
-      schema:
-        type: string
+        schema:
+          type: string
       empty: True
       nullable: True
     ethical_reviews:
@@ -76,19 +74,7 @@ considerations:
         type: string
       empty: True
       nullable: True
-    limitations:
-      type: list
-      schema:
-        type: string
-      empty: True
-      nullable: True
-    risks:
-      type: list
-      schema:
-        type: string
-      empty: True
-      nullable: True
-    underrepresented_demographies:
+    trade_offs:
       type: list
       schema:
         type: string
@@ -97,25 +83,13 @@ considerations:
 evaluation:
   type: dict
   schema:
-    evaluation_datasets:
+    performance_metrics:
       type: list
       schema:
         type: string
       empty: True
       nullable: True
-    evaluation_environment:
-      type: list
-      schema:
-        type: string
-      empty: True
-      nullable: True
-    preprocessing:
-      type: list
-      schema:
-        type: string
-      empty: True
-      nullable: True
-    quanititave_analysis:
+    test_results:
       type: list
       schema:
         type: string
@@ -124,19 +98,13 @@ evaluation:
 examples:
   type: dict
   schema:
-    current_deployments:
-      type: list
-      schema:
-        type: string
-      empty: True
-      nullable: True
     demos:
       type: list
       schema:
         type: string
       empty: True
       nullable: True
-    project_repo:
+    deployments:
       type: list
         schema:
           type: string
@@ -153,20 +121,14 @@ experience:
   schema:
     expected_performance:
       type: list
-        schema:
-          type: string
-      empty: True
-      nullable: True
-    ideal_conditions:
-      type: list
       schema:
         type: string
       empty: True
       nullable: True
-    input_format:
+    inputs:
       type: list
-        schema:
-          type: string
+      schema:
+        type: string
       empty: True
       nullable: True
     intended_users:
@@ -177,80 +139,53 @@ experience:
       nullable: True
     intended_use_cases:
       type: list
-      schema:
-        type: string
+        schema:
+          type: string
       empty: True
       nullable: True
-    prohibited_use_cases:
-      type: list
-      schema:
-        type: string
-      empty: True
-      nullable: True
-    unintended_use_cases:
+    outputs:
       type: list
         schema:
           type: string
       empty: True
       nullable: True
-factors:
+security:
   type: dict
   schema:
-    data_subgroups:
+    data_security:
       type: list
       schema:
         type: string
       empty: True
       nullable: True
-    performance_factors:
+    vulnerabilities:
       type: list
       schema:
         type: string
+      empty: True
+      nullable: True
+    security_protocols:
+      type: list
+        schema:
+          type: string
       empty: True
       nullable: True
 structure:
   type: dict
   schema:
-    fine_tuning:
+    datasets:
       type: list
         schema:
           type: string
       empty: True
       nullable: True
-    model_architecture:
-      type: list
-        schema:
-          type: string
-      empty: True
-      nullable: True
-training:
-  type: dict
-  schema:
-    preprocessing:
+    models:
       type: list
       schema:
         type: string
       empty: True
       nullable: True
-    pretraining:
-      type: list
-      schema:
-        type: string
-      empty: True
-      nullable: True
-    quanititave_analysis:
-      type: list
-      schema:
-        type: string
-      empty: True
-      nullable: True
-    training_environment:
-      type: list
-      schema:
-        type: string
-      empty: True
-      nullable: True
-    train_datasets:
+    technical_specifications:
       type: list
         schema:
           type: string

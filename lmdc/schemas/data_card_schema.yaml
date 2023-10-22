@@ -223,7 +223,9 @@ creation:
       empty: True
       nullable: True
     synthetic_features:
-      type: dict
+      type: list
+        schema:
+          type: string
       empty: True
       nullable: True
 examples:
