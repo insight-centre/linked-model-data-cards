@@ -12,7 +12,7 @@ the paper:
 
 |Dir|Content|
 |---|:---:|
-|**lmdc / cards**|Generated examples for different card types in yaml and rdf format.|
-|**lmdc / schemas**|Schema definition depicting how the card content is expected to be filled in.|
-|**lmdc / templates**|Sample templates that can be re-used to generate cards.|
-|**scripts**|Script to validate newly created cards against the expected schema.|
+|`lmdc/cards`|Generated examples for different card types in yaml and rdf format.|
+|`lmdc/schemas`|Schema definition depicting how the card content is expected to be filled in.|
+|`lmdc/templates`|Sample templates that can be re-used to generate cards.|
+|`scripts`|Script to validate newly created cards against the expected schema.|
