@@ -43,7 +43,7 @@ creation:
   motivation:  # motivation behind creating the dataset
   synthetic_features:  # synthetic feature names
 examples:
-  code_examples:  # code examples
+  code_examples:  # code examples on how to load the dataset
   demos:  # links to demonstrations
   error_prone_instances:  # instances which are error-prone and should be removed
   further_documentation:  # links to any additional documentation
@@ -65,7 +65,6 @@ structure:
   data_splits:  # recommended ways to split the dataset
   duplicate_data:  # additional information on duplicate instances in the dataset
   instance_connections:  # known connections between instances
-  instance_count:  # number of instances
   instance_patterns:  # known patterns in the dataset
   missing_data:  # additional information on missing values in the dataset
   sensitive_content:  # additional information on PII

@@ -357,10 +357,6 @@ structure:
           type: string
       empty: True
       nullable: True
-    instance_count:
-      type: integer
-      empty: True
-      nullable: True
     instance_patterns:
       type: list
         schema:
