@@ -7,12 +7,12 @@ In the realm of artificial intelligence, the significance of thorough documentat
 This repository contains the proposals made under _Bias Detection with A Semantic Approach for Linked Model, Data, and 
 Dataspace Cards_. 
 
-The following high-level directories contain the schemas, templates, and card examples discussed in 
+The following directories contain the schemas, templates, and card examples discussed in 
 the paper:
 
 |Dir|Content|
 |---|:---:|
-|**cards**|Generated examples for different card types in yaml and rdf format.|
-|**schemas**|Schema definition depicting how the card content is expected to be filled in.|
-|**templates**|Sample templates that can be re-used to generate cards.|
+|**lmdc / cards**|Generated examples for different card types in yaml and rdf format.|
+|**lmdc / schemas**|Schema definition depicting how the card content is expected to be filled in.|
+|**lmdc / templates**|Sample templates that can be re-used to generate cards.|
 |**scripts**|Script to validate newly created cards against the expected schema.|
