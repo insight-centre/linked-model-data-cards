@@ -1,0 +1,53 @@
+overview:
+  article_link: "https://arxiv.org/abs/1810.04805v2"
+  data_cards: ["BookCorpus"]
+  domains: ["natural language processing", "natural language understanding"]
+  keywords: ["masked language modeling", "next sentence prediction"]
+  last_update_date:
+  model_type: ["transformers"]
+  name: ["bert"]
+  release_date:  11/10/2018
+  responsible_parties: ["Jacob Devlin", "Ming-Wei Chang", "Kenton Lee", "Kristina Toutanova"]
+  version:
+considerations:
+  biases: [
+    "Sociocultural Bias: The model can perpetuate biases based on ethnicity, religion, and demographics.",
+    "Confirmation Bias: The model can confirm existing beliefs or stereotypes based on the training data.",
+    "Gender Bias: The model has been found to exhibit gender bias.",
+  ]
+  caveats: ["Fairness Concerns", "Legal Compliance"]
+  environmental_impacts:
+  ethical_reviews:
+  limitations: ["Long-Term Context"]
+  risks:
+  underrepresented_demographies:
+evaluation:
+  evaluation_datasets: ["GLUE", "SNLI", "MNLI", "SQuAD"]
+  evaluation_environment:
+  preprocessing:
+  quanititave_analysis:
+examples:
+  current_deployments:
+  demos:
+  project_repo: ["https://github.com/google-research/bert"]
+  tutorials: ["https://huggingface.co/bert-base-uncased#how-to-use"]
+experience:
+  expected_performance:
+  ideal_conditions:
+  input_format: ["Single Sentence Input", "Paired Sentences Inout"]
+  intended_users:
+  intended_use_cases: ["Text Classification", "Text Summarization", "Machine Translation"]
+  prohibited_use_cases:
+  unintended_use_cases:
+factors:
+  data_subgroups:
+  performance_factors:
+structure:
+  fine_tuning:
+  model_architecture:  ["layers: 12, hidden: 768 heads: 12, parameters: 110000000}"]
+training:
+  preprocessing:
+  pretraining:
+  quanititave_analysis:
+  training_environment:
+  train_datasets: ["Wikipedia", "BookCorpus"]
