@@ -26,7 +26,7 @@ additional_info:
                       booktitle = {The IEEE International Conference on Computer Vision (ICCV)},
                       month = {December},
                       year = {2015}
-                    }",
+      }",
   ]
   curators: ["Yukun Zhu", "Ryan Kiros", "Richard Zemel", "Ruslan Salakhutdinov", "Raquel Urtasun", "Antonio Torralba", "Sanja Fidler"]
   funding: ["Google", "Samsung", "NSERC", "CIFAR", "ONR"]
