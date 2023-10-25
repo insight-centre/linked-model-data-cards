@@ -3,44 +3,45 @@ overview:
   schema:
     applications:
       type: list
-        schema:
-          type: string
+      schema:
+        type: string
       empty: True
       nullable: True
     contact_information:
       type: list
-        schema:
-          type: string
+      schema:
+        type: string
       empty: True
       nullable: True
     last_update_date:
-      type: date
+      type: string
       empty: True
       nullable: True
     name:
       type: string
       empty: False
       nullable: False
+      required: True
     purpose:
       type: list
-        schema:
-          type: string
+      schema:
+        type: string
       empty: True
       nullable: True
     references:
       type: list
-        schema:
-          type: string
+      schema:
+        type: string
       empty: True
       nullable: True
     release_date:
-      type: date
+      type: string
       empty: True
       nullable: True
     target_industires:
       type: list
-        schema:
-          type: string
+      schema:
+        type: string
       empty: True
       nullable: True
     version:
@@ -64,8 +65,8 @@ considerations:
       nullable: True
     explainability:
       type: list
-        schema:
-          type: string
+      schema:
+        type: string
       empty: True
       nullable: True
     ethical_reviews:
@@ -106,8 +107,8 @@ examples:
       nullable: True
     deployments:
       type: list
-        schema:
-          type: string
+      schema:
+        type: string
       empty: True
       nullable: True
     tutorials:
@@ -139,14 +140,14 @@ experience:
       nullable: True
     intended_use_cases:
       type: list
-        schema:
-          type: string
+      schema:
+        type: string
       empty: True
       nullable: True
     outputs:
       type: list
-        schema:
-          type: string
+      schema:
+        type: string
       empty: True
       nullable: True
 security:
@@ -166,8 +167,8 @@ security:
       nullable: True
     security_protocols:
       type: list
-        schema:
-          type: string
+      schema:
+        type: string
       empty: True
       nullable: True
 structure:
@@ -175,8 +176,8 @@ structure:
   schema:
     datasets:
       type: list
-        schema:
-          type: string
+      schema:
+        type: string
       empty: True
       nullable: True
     models:
@@ -187,7 +188,7 @@ structure:
       nullable: True
     technical_specifications:
       type: list
-        schema:
-          type: string
+      schema:
+        type: string
       empty: True
       nullable: True

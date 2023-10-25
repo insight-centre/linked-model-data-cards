@@ -10,7 +10,7 @@ overview:
   languages: ["english"]
   last_update_date:
   model_cards: ["bert", "roberta", "albert"]
-  release_date: 22/06/2015
+  release_date: "22.06.2015"
   responsible_parties: ["none; requires crawling a private copy from Smashwords"]
   version:
 additional_info:
@@ -58,7 +58,7 @@ considerations:
   skewness: ["Romance genre was found to be overrepresented as compared to others in the dataset."]
   trade_offs:
 creation:
-  annoator_demographics:
+  annotator_demographics:
   annotation_guidelines:
   collection_date:
   collection_methods: ["Refer https://github.com/soskek/bookcorpus/blob/master/README.md"]

@@ -47,7 +47,7 @@ considerations:
   skewness:
   trade_offs:
 creation:
-  annoator_demographics:
+  annotator_demographics:
   annotation_guidelines:
   collection_date:
   collection_methods: ["Refer https://huggingface.co/datasets/wikipedia/blob/main/wikipedia.py"]

@@ -7,24 +7,24 @@ overview:
       nullable: True
     data_cards:
       type: list
-        schema:
-          type: string
+      schema:
+        type: string
       empty: True
       nullable: True
     domains:
       type: list
-        schema:
-          type: string
+      schema:
+        type: string
       empty: True
       nullable: True
     keywords:
       type: list
-        schema:
-          type: string
+      schema:
+        type: string
       empty: True
       nullable: True
     last_update_date:
-      type: date
+      type: string
       empty: True
       nullable: True
     model_type:
@@ -35,8 +35,9 @@ overview:
       type: string
       empty: False
       nullable: False
+      required: True
     release_date:
-      type: date
+      type: string
       empty: True
       nullable: True
     responsible_parties:
@@ -153,8 +154,8 @@ experience:
   schema:
     expected_performance:
       type: list
-        schema:
-          type: string
+      schema:
+        type: string
       empty: True
       nullable: True
     ideal_conditions:
@@ -165,8 +166,8 @@ experience:
       nullable: True
     input_format:
       type: list
-        schema:
-          type: string
+      schema:
+        type: string
       empty: True
       nullable: True
     intended_users:
@@ -189,8 +190,8 @@ experience:
       nullable: True
     unintended_use_cases:
       type: list
-        schema:
-          type: string
+      schema:
+        type: string
       empty: True
       nullable: True
 factors:
@@ -213,14 +214,14 @@ structure:
   schema:
     fine_tuning:
       type: list
-        schema:
-          type: string
+      schema:
+        type: string
       empty: True
       nullable: True
     model_architecture:
       type: list
-        schema:
-          type: string
+      schema:
+        type: string
       empty: True
       nullable: True
 training:
@@ -252,7 +253,7 @@ training:
       nullable: True
     train_datasets:
       type: list
-        schema:
-          type: string
+      schema:
+        type: string
       empty: True
       nullable: True

@@ -3,26 +3,27 @@ overview:
   schema:
     contact_information:
       type: list
-        schema:
-          type: string
+      schema:
+        type: string
       empty: True
       nullable: True
     last_update_date:
-      type: date
+      type: string
       empty: True
       nullable: True
     name:
       type: string
       empty: False
       nullable: False
+      required: True
     purpose:
       type: list
-        schema:
-          type: string
+      schema:
+        type: string
       empty: True
       nullable: True
     release_date:
-      type: date
+      type: string
       empty: True
       nullable: True
     version:
@@ -133,8 +134,8 @@ structure:
   schema:
     data_access_methos:
       type: list
-        schema:
-          type: string
+      schema:
+        type: string
       empty: True
       nullable: True
     data_formats:
@@ -145,8 +146,8 @@ structure:
       nullable: True
     data_infrastructure:
       type: list
-        schema:
-          type: string
+      schema:
+        type: string
       empty: True
       nullable: True
     data_sources:

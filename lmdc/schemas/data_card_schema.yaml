@@ -9,6 +9,7 @@ overview:
       type: string
       empty: False
       nullable: False
+      required: True
     data_modality:
       type: integer
       empty: True
@@ -44,7 +45,7 @@ overview:
       empty: True
       nullable: True
     last_update_date:
-      type: date
+      type: string
       empty: True
       nullable: True
     model_cards:
@@ -54,7 +55,7 @@ overview:
       empty: True
       nullable: True
     release_date:
-      type: date
+      type: string
       empty: True
       nullable: True
     responsible_parties:
@@ -72,8 +73,8 @@ additional_info:
   schema:
     background_info:
       type: list
-        schema:
-          type: string
+      schema:
+        type: string
       empty: True
       nullable: True
     citations:
@@ -114,8 +115,8 @@ additional_info:
       nullable: True
     updates:
       type: list
-        schema:
-          type: string
+      schema:
+        type: string
       empty: True
       nullable: True
     wipeout_policies:
@@ -202,8 +203,8 @@ creation:
       nullable: True
     collection_methods:
       type: list
-        schema:
-          type: string
+      schema:
+        type: string
       empty: True
       nullable: True
     collectors:
@@ -214,18 +215,20 @@ creation:
       nullable: True
     data_sources:
       type: list
-        schema:
-          type: string
+      schema:
+        type: string
       empty: True
       nullable: True
     motivation:
-      type: string
+      type: list
+      schema:
+        type: string
       empty: True
       nullable: True
     synthetic_features:
       type: list
-        schema:
-          type: string
+      schema:
+        type: string
       empty: True
       nullable: True
 examples:
@@ -269,14 +272,14 @@ examples:
       nullable: True
     publication_repo:
       type: list
-        schema:
-          type: string
+      schema:
+        type: string
       empty: True
       nullable: True
     project_repo:
       type: list
-        schema:
-          type: string
+      schema:
+        type: string
       empty: True
       nullable: True
     typical_instances:
@@ -326,8 +329,8 @@ experience:
       nullable: True
     pipeline_info:
       type: list
-        schema:
-          type: string
+      schema:
+        type: string
       empty: True
       nullable: True
 structure:
@@ -335,44 +338,44 @@ structure:
   schema:
     columns:
       type: list
-        schema:
-          type: string
+      schema:
+        type: string
       empty: True
       nullable: True
     data_splits:
       type: list
-        schema:
-          type: string
+      schema:
+        type: string
       empty: True
       nullable: True
     duplicate_data:
       type: list
-        schema:
-          type: string
+      schema:
+        type: string
       empty: True
       nullable: True
     instance_connections:
       type: list
-        schema:
-          type: string
+      schema:
+        type: string
       empty: True
       nullable: True
     instance_patterns:
       type: list
-        schema:
-          type: string
+      schema:
+        type: string
       empty: True
       nullable: True
     missing_data:
       type: list
-        schema:
-          type: string
+      schema:
+        type: string
       empty: True
       nullable: True
     sensitive_content:
       type: list
-        schema:
-          type: string
+      schema:
+        type: string
       empty: True
       nullable: True
 transformations:
