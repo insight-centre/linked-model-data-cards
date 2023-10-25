@@ -24,11 +24,13 @@ overview:
       empty: True
       nullable: True
     last_update_date:
-      type: string
+      type: date
       empty: True
       nullable: True
     model_type:
-      type: string
+      type: list
+      schema:
+        type: string
       empty: True
       nullable: True
     name:
@@ -57,8 +59,8 @@ considerations:
       type: list
       schema:
         type: string
-    empty: True
-    nullable: True
+      empty: True
+      nullable: True
     caveats:
       type: list
       schema:
@@ -139,8 +141,8 @@ examples:
       nullable: True
     project_repo:
       type: list
-        schema:
-          type: string
+      schema:
+        type: string
       empty: True
       nullable: True
     tutorials:

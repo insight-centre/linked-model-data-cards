@@ -5,8 +5,8 @@ overview:
   keywords: ["masked language modeling", "next sentence prediction"]
   last_update_date:
   model_type: ["transformers"]
-  name: ["bert"]
-  release_date:  "11.10.2018"
+  name: "bert"
+  release_date: "11.10.2018"
   responsible_parties: ["Jacob Devlin", "Ming-Wei Chang", "Kenton Lee", "Kristina Toutanova"]
   version:
 considerations:
