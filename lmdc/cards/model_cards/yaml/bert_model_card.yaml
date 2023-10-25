@@ -34,7 +34,7 @@ examples:
 experience:
   expected_performance:
   ideal_conditions:
-  input_format: ["Single Sentence Input", "Paired Sentences Inout"]
+  input_format: ["Single Sentence Input", "Paired Sentences Input"]
   intended_users:
   intended_use_cases: ["Text Classification", "Text Summarization", "Machine Translation"]
   prohibited_use_cases:
