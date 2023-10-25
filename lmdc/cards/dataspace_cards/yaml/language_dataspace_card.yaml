@@ -4,14 +4,14 @@ overview:
   name: "language"
   purpose: ["Consolidate information related to datasets and models that make use of very large texts from books, articles, and scripted plays."]
   release_date: "24.10.2023"
-  version: 0.1
+  version: "0.1"
 considerations:
   dependencies:
   environmental_impacts:
   ethical_reviews:
   limitations:
   privacy:
-dataasets:
+datasets:
   data_cards:  ["BookCorpus", "Wikipedia"]
   data_quality_metrics:
 examples:
