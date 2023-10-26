@@ -10,9 +10,15 @@ Dataspace Cards".
 The following directories contain the schemas, templates, and card examples discussed in 
 the paper:
 
-|Dir|Content|
-|---|:---:|
-|`lmdc/cards`|Generated examples for different card types in yaml and rdf format.|
-|`lmdc/schemas`|Schema definition depicting how the card content is expected to be filled in.|
-|`lmdc/templates`|Sample templates that can be re-used to generate cards.|
-|`scripts`|Script to validate newly created cards against the expected schema.|
+| Dir              |                                    Content                                    |
+|------------------|:-----------------------------------------------------------------------------:|
+| `lmdc/cards`     |      Generated examples for different card types in yaml and rdf format.      |
+| `lmdc/schemas`   | Schema definition depicting how the card content is expected to be filled in. |
+| `lmdc/templates` |            Sample templates that can be re-used to generate cards.            |
+| `scripts`        |      Script to validate newly created cards against the expected schema.      |
+
+## Validation
+
+To validate card content against the defined schemas, run:
+
+`python scripts/validate.py <card_type_dir> <card_name> <schema_type>`

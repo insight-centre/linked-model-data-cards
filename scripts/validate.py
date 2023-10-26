@@ -42,7 +42,7 @@ def validate_card(card_type, card_name, schema_type):
 
 if __name__ == '__main__':
     if len(sys.argv) != 4:
-        print("Usage: python scripts/validate.py <card_type> <card_name> <schema_type>")
+        print("Usage: python scripts/validate.py <card_type_dir> <card_name> <schema_type>")
         sys.exit(1)
 
     card_type = sys.argv[1]
