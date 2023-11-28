@@ -1,0 +1,105 @@
+overview:
+  article_link: "https://dumps.wikimedia.org/"
+  name: "Wikipedia"
+  data_modality:
+  domains: ["natural language processing", "natural language understanding"]
+  file_format: ".txt"
+  file_name:
+  file_repository_link: "https://dumps.wikimedia.org/"
+  keywords: ["nlp", "nlu", "text", "wiki", "pages", "articles"]
+  languages: ["multilingual"]
+  last_update_date:
+  model_cards: ["bert", "roberta", "albert"]
+  release_date:
+  responsible_parties:
+  version:
+additional_info:
+  background_info: ["Wikipedia articles from all languages."]
+  citations: [
+      "@ONLINE{wikidump,
+               author = 'Wikimedia Foundation',
+               title = 'Wikimedia Downloads',
+               url = 'https://dumps.wikimedia.org'
+      }",
+  ]
+  curators:
+  funding:
+  maintenance:
+  references: ["https://huggingface.co/datasets/wikipedia", "https://paperswithcode.com/dataset/wiki-en"]
+  retention_policies:
+  updates:
+  wipeout_policies:
+considerations:
+  biases: [
+      "Political and Ideological Bias: Edits on controversial topics can be subject to edits reflecting diverse view points.",
+      "Geographic and Regional Bias:  Articles related to regions with fewer editors may have less content..",
+      "Vandalism and Edit Wars: Intentional misinformation can be introduced by vandals. Articles can reflect biases of the most persistent contributors.",
+  ]
+  ethical_reviews:
+  licenses: ["CC BY-SA", "GFDL"]
+  limitations: [
+      "Knowledge Gaps: Not all topics are equally represented on Wikipedia.",
+      "Article Quality: Some articles may receieve more attention and may have higher quality.",
+  ]
+  policies:
+  restrictions:
+  risks:
+  skewness:
+  trade_offs:
+creation:
+  annotator_demographics:
+  annotation_guidelines:
+  collection_date:
+  collection_methods: ["Refer https://huggingface.co/datasets/wikipedia/blob/main/wikipedia.py"]
+  collectors:
+  data_sources: ["https://www.wikipedia.org/"]
+  motivation: ["NLP Research", "Language Modeling", "Benchmarking"]
+  synthetic_features:
+examples:
+  code_examples:
+  demos: ["https://huggingface.co/datasets/wikipedia", "https://paperswithcode.com/dataset/wiki-en"]
+  error_prone_instances:
+  further_documentation:
+  null_feature_instances:
+  outlier_instances:
+  publication_repo:
+  project_repo:
+  typical_instances: [
+      "{
+        'id': '1',
+        'url': 'https://simple.wikipedia.org/wiki/University_of_Galway',
+        'title': 'University of Galway',
+        'text': 'The University of Galway (Irish: Ollscoil na Gaillimhe) is a public research university located in the city of Galway, Ireland....'
+      }",
+      "{
+         'id': '2',
+         'url': 'https://simple.wikipedia.org/wiki/Genesys_(company)',
+         'title': 'Genesys (company)',
+         'text': 'Genesys, or Genesys Telecommunications Laboratories, Inc., is an American software company that sells customer experience (CX) and call center technology to mid-sized and large businesses.....'
+      }",
+  ]
+experience:
+  additional_use_cases:
+  intended_users: ["Cultural and Social Studies", "Knowledge Graphs"]
+  intended_use_cases: ["Information Retrieval", "Text Summarization", "Question Answering", "Machine Translation", "Chatbots"]
+  prerequisites:
+  prohibited_use_cases:
+  unintended_use_cases:
+  pipeline_info:
+structure:
+  columns:
+  data_splits:
+  duplicate_data:
+  instance_connections:
+  instance_patterns:
+  missing_data:
+  sensitive_content: ["Texts from this dataset may contain offensive and biased content."]
+transformations:
+  cleaning_methods: ["Removing Duplicates", "Spelling Corrections"]
+  is_raw_data_available: True
+  labelling_methods:
+  parsing_methods:
+  processing_methods: ["Tokenization", "Stemming", "Anonymization", "Language Detection", "Length-Based Filtering"]
+  rating:
+  sampling_methods:
+  validation_methods:

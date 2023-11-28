@@ -1,0 +1,103 @@
+overview:
+  article_link: "https://arxiv.org/abs/1506.06724"
+  name: "BookCorpus"
+  data_modality:  74004228
+  domains: ["natural language processing", "natural language understanding"]
+  file_format: ".txt"
+  file_name:
+  file_repository_link: "https://yknzhu.wixsite.com/mbweb"
+  keywords: ["nlp", "nlu", "text", "books", "movies", "smashwords"]
+  languages: ["english"]
+  last_update_date:
+  model_cards: ["bert", "roberta", "albert"]
+  release_date: "22.06.2015"
+  responsible_parties: ["none; requires crawling a private copy from Smashwords"]
+  version:
+additional_info:
+  background_info: [
+      "Large collection of free novel books.",
+      "Popular large-scale text corpus for unsupervised learning of sentence encoders/decoders.",
+      "This dataset aligns books to their movie releases in order to provide descriptive explanations for visual content that go semantically far beyond the captions available in current datasets."
+  ]
+  citations: [
+      "@InProceedings{Zhu_2015_ICCV,
+                      title = {Aligning Books and Movies: Towards Story-Like Visual Explanations by Watching Movies and Reading Books},
+                      author = {Zhu, Yukun and Kiros, Ryan and Zemel, Rich and Salakhutdinov, Ruslan and Urtasun, Raquel and Torralba, Antonio and Fidler, Sanja},
+                      booktitle = {The IEEE International Conference on Computer Vision (ICCV)},
+                      month = {December},
+                      year = {2015}
+      }",
+  ]
+  curators: ["Yukun Zhu", "Ryan Kiros", "Richard Zemel", "Ruslan Salakhutdinov", "Raquel Urtasun", "Antonio Torralba", "Sanja Fidler"]
+  funding: ["Google", "Samsung", "NSERC", "CIFAR", "ONR"]
+  maintenance: ["This dataset is no longer distributed.", "Raw data is maintained on https://www.smashwords.com/"]
+  references: ["https://huggingface.co/datasets/bookcorpus", "https://paperswithcode.com/dataset/bookcorpus"]
+  retention_policies: ["https://www.smashwords.com/about/tos"]
+  updates: ["https://www.smashwords.com/about/tos"]
+  wipeout_policies: ["https://www.smashwords.com/about/tos"]
+considerations:
+  biases: [
+      "Cultural and Temporal Bias: Older books may contain language or ideas that are outdated or offensive by contemporary standards.",
+      "Underrepresented Voices:  The dataset may not be fully representative of diverse perspectives such as from marginalized communities.",
+      "Genre and Topic Bias: May favor certain genres or topics over others.",
+      "Narrative and Author Bias: The writing styles and perspectives of different author can vary widely.",
+  ]
+  ethical_reviews: [
+      "Privacy: Texts from this dataset may contain personal information about authors and real individuals.",
+      "Copyright Infringement",
+  ]
+  licenses: ["https://www.smashwords.com/about/tos"]
+  limitations: [
+      "May not represent contemporary language and culture accurately.",
+      "Books can contain various forms of noise such as typos, archaic language, preambles, end notes, etc.",
+      "Lack of Context: Training models only on data from books may not prepare them for use in real-world applications that require context and dialogue understanding."
+  ]
+  policies:
+  restrictions: ["Some authors may have specific rights or restrictions on how their works can be used."]
+  risks: ["copyright violations in content", "duplicated books", "potentially problematic content", "lopsided author contribution"]
+  skewness: ["Romance genre was found to be overrepresented as compared to others in the dataset."]
+  trade_offs:
+creation:
+  annotator_demographics:
+  annotation_guidelines:
+  collection_date:
+  collection_methods: ["Refer https://github.com/soskek/bookcorpus/blob/master/README.md"]
+  collectors:
+  data_sources: ["https://www.smashwords.com/"]
+  motivation: ["NLP Research", "Language Modeling", "Benchmarking"]
+  synthetic_features:
+examples:
+  code_examples:
+  demos: ["https://paperswithcode.com/dataset/bookcorpus", "https://huggingface.co/datasets/bookcorpus"]
+  error_prone_instances:
+  further_documentation:
+  null_feature_instances:
+  outlier_instances:
+  publication_repo: ["https://github.com/soskek/bookcorpus/tree/master"]
+  project_repo: ["https://huggingface.co/datasets/bookcorpus"]
+  typical_instances:
+experience:
+  additional_use_cases:
+  intended_users:
+  intended_use_cases: ["Information Retrieval", "Text Summarization", "Question Answering", "Machine Translation", "Chatbots"]
+  prerequisites:
+  prohibited_use_cases:
+  unintended_use_cases:
+  pipeline_info:
+structure:
+  columns:
+  data_splits:
+  duplicate_data:
+  instance_connections:
+  instance_patterns:
+  missing_data:
+  sensitive_content: ["Texts from this dataset may contain offensive content."]
+transformations:
+  cleaning_methods: ["Removing Duplicates", "Spelling Corrections"]
+  is_raw_data_available: True
+  labelling_methods:
+  parsing_methods:
+  processing_methods: ["Tokenization", "Stemming", "Anonymization", "Language Detection", "Length-Based Filtering"]
+  rating:
+  sampling_methods:
+  validation_methods:

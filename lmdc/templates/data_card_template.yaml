@@ -1,0 +1,79 @@
+overview:
+  article_link:  # an official weblink for the dataset
+  name:  # name of the dataset to be utilized for referring this data card
+  data_modality:  # modality of the dataset
+  domains:  # domains with which the dataset relates to
+  file_format:  # format in which it exists in `file_repository_link`
+  file_name:  # name of the dataset file in `file_repository_link`
+  file_repository_link:  # direct link to the dataset file
+  keywords:  # keywords associated with the dataset
+  languages:  # languages associated with the dataset
+  last_update_date:  # date when the dataset was last updated
+  model_cards:  # models which use the dataset for training or evaluation; should refer to `name` of a model_card
+  release_date:  # date when the dataset was first released
+  responsible_parties:  # parties/persons/entities responsible for creation or maintenance of the dataset
+  version:  # latest version being readily maintained
+additional_info:
+  background_info:  # background information to help understand or use the dataset
+  citations:  # information on how to cite the dataset
+  curators:  # authors/curators
+  funding:   # parties/entities that provide funding to extend/maintain the dataset
+  maintenance:  # information related to maintenance of the dataset
+  references:  # references to help understand or use the dataset
+  retention_policies:  # retention policies
+  updates:  # recent updates performed
+  wipeout_policies:  # wipe-out policies
+considerations:
+  biases:  # known or potential biases in the dataset
+  ethical_reviews:  # ethical considerations
+  licenses:  # licensing information
+  limitations:  # any limitations associated with the dataset
+  policies:  # relevant policies related to the dataset
+  restrictions:  # restrictions involved
+  risks:  # any risks/warning to be careful about before using the dataset
+  skewness:  # known or potential skewness in the dataset
+  trade_offs:  # trade-offs involved
+creation:
+  annoator_demographics:  # additional information on demographics of the annotators involved
+  annotation_guidelines:  # additional information on any annotation guidelines
+  collection_date:  # date when the dataset collection started
+  collection_methods:  # methods used to collect the dataset
+  collectors: # parties responsible for collection of the dataset
+  data_sources:  # sources used for creating the dataset
+  motivation:  # motivation behind creating the dataset
+  synthetic_features:  # synthetic feature names
+examples:
+  code_examples:  # code examples on how to load the dataset
+  demos:  # links to demonstrations
+  error_prone_instances:  # instances which are error-prone and should be removed
+  further_documentation:  # links to any additional documentation
+  null_feature_instances:  # what null instances look like
+  outlier_instances:  # outlier types which should be removed
+  publication_repo:  # links to publications that utilize the dataset
+  project_repo:  # repository links related to usage of the dataset in models
+  typical_instances:  # what typical instances look like
+experience:
+  additional_use_cases:  # unconventional use cases
+  intended_users:  # intended users of the dataset
+  intended_use_cases:  # intended use cases
+  prerequisites:  # technical knowledge or domain understanding required
+  prohibited_use_cases:  # use cases for which the dataset should not be used for
+  unintended_use_cases:  # unintended use cases of the dataset
+  pipeline_info:  # any known information of pipeline or downstream use
+structure:
+  columns:  # column names
+  data_splits:  # recommended ways to split the dataset
+  duplicate_data:  # additional information on duplicate instances in the dataset
+  instance_connections:  # known connections between instances
+  instance_patterns:  # known patterns in the dataset
+  missing_data:  # additional information on missing values in the dataset
+  sensitive_content:  # additional information on PII
+transformations:
+  cleaning_methods:  # cleaning methods used
+  is_raw_data_available:  # availability of raw values in the dataset
+  labelling_methods:  # labelling methods used
+  parsing_methods:  # parsing methods methods used
+  processing_methods:  # processing methods used
+  rating:  # data usability rating
+  sampling_methods:  # sampling/filtering methods used
+  validation_methods:  # validation methods used

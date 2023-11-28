@@ -1,0 +1,427 @@
+overview:
+  type: dict
+  schema:
+    article_link:
+      type: string
+      empty: True
+      nullable: True
+    name:
+      type: string
+      empty: False
+      nullable: False
+      required: True
+    data_modality:
+      type: integer
+      empty: True
+      nullable: True
+    domains:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    file_format:
+      type: string
+      empty: True
+      nullable: True
+    file_name:
+      type: string
+      empty: True
+      nullable: True
+    file_repository_link:
+      type: string
+      empty: True
+      nullable: True
+    keywords:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    languages:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    last_update_date:
+      type: string
+      empty: True
+      nullable: True
+    model_cards:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    release_date:
+      type: string
+      empty: True
+      nullable: True
+    responsible_parties:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    version:
+      type: string
+      empty: True
+      nullable: True
+additional_info:
+  type: dict
+  schema:
+    background_info:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    citations:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    curators:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    funding:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    maintenance:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    references:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    retention_policies:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    updates:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    wipeout_policies:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+considerations:
+  type: dict
+  schema:
+    biases:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    ethical_reviews:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    licenses:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    limitations:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    policies:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    restrictions:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    risks:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    skewness:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    trade_offs:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+creation:
+  type: dict
+  schema:
+    annotator_demographics:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    annotation_guidelines:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    collection_date:
+      type: date
+      empty: True
+      nullable: True
+    collection_methods:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    collectors:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    data_sources:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    motivation:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    synthetic_features:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+examples:
+  type: dict
+  schema:
+    code_examples:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    demos:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    error_prone_instances:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    further_documentation:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    null_feature_instances:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    outlier_instances:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    publication_repo:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    project_repo:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    typical_instances:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+experience:
+  type: dict
+  schema:
+    additional_use_cases:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    intended_users:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    intended_use_cases:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    prerequisites:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    prohibited_use_cases:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    unintended_use_cases:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    pipeline_info:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+structure:
+  type: dict
+  schema:
+    columns:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    data_splits:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    duplicate_data:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    instance_connections:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    instance_patterns:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    missing_data:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    sensitive_content:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+transformations:
+  type: dict
+  schema:
+    cleaning_methods:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    is_raw_data_available:
+      type: boolean
+      empty: True
+      nullable: True
+    labelling_methods:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    parsing_methods:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    processing_methods:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    rating:
+      type: string
+      empty: True
+      nullable: True
+    sampling_methods:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    validation_methods:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True

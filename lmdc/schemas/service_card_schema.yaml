@@ -1,0 +1,194 @@
+overview:
+  type: dict
+  schema:
+    applications:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    contact_information:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    last_update_date:
+      type: string
+      empty: True
+      nullable: True
+    name:
+      type: string
+      empty: False
+      nullable: False
+      required: True
+    purpose:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    references:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    release_date:
+      type: string
+      empty: True
+      nullable: True
+    target_industires:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    version:
+      type: string
+      empty: True
+      nullable: True
+considerations:
+  type: dict
+  schema:
+    biases:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    bias_mitigation:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    explainability:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    ethical_reviews:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    trade_offs:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+evaluation:
+  type: dict
+  schema:
+    performance_metrics:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    test_results:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+examples:
+  type: dict
+  schema:
+    demos:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    deployments:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    tutorials:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+experience:
+  type: dict
+  schema:
+    expected_performance:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    inputs:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    intended_users:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    intended_use_cases:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    outputs:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+security:
+  type: dict
+  schema:
+    data_security:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    vulnerabilities:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    security_protocols:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+structure:
+  type: dict
+  schema:
+    datasets:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    models:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True
+    technical_specifications:
+      type: list
+      schema:
+        type: string
+      empty: True
+      nullable: True

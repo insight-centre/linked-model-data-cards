@@ -1,0 +1,32 @@
+overview:
+  contact_information: ["<first_name.last_name@genesys.com>", "<first_name.last_name@universityofgalway.ie>"]
+  last_update_date: "24.10.2023"
+  name: "language"
+  purpose: ["Consolidate information related to datasets and models that make use of very large texts from books, articles, and scripted plays."]
+  release_date: "24.10.2023"
+  version: "0.1"
+considerations:
+  dependencies:
+  environmental_impacts:
+  ethical_reviews:
+  limitations:
+  privacy:
+datasets:
+  data_cards:  ["BookCorpus", "Wikipedia"]
+  data_quality_metrics:
+examples:
+  demos:
+  tutorials:
+experience:
+  collaboration:
+  lifecycle_stages:
+  visualization:
+models:
+  model_cards: ["bert"]
+  model_performance_metrics:
+structure:
+  data_access_methos:
+  data_formats:
+  data_infrastructure:
+  data_sources:
+  meta_data_management:
